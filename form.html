@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="from.css">
+</head>
+<body>
+    <h1>Welcome to the Convergence India 2025!</h1>
+    <form action="post" enctype="multipart/form-data">
+        <H2>Registration Form</H2>
+        <div>
+        <label for="usernamme">Enter your name*:</label>
+        <input type="text" id="username"  name="username" placeholder="Enter your name">
+       </div>
+
+       <div>
+        <label for="Email">Enter your mail*:</label>
+        <input type="email" id="email" placeholder="abc@gmail.com" required required>
+       </div>
+       <div>
+        <label for="Organistion/College">Enter your college/organisation *:</label>
+        <input type="text" id="Organistion/College" name="Organistion/College" placeholder="Enter here" required>
+       </div>
+
+       <div>
+       <label for="Gender">Gender*:</label>
+       <input type="radio" id="male" name="Gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="Gender" value="female" required>
+        <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="file">Upload your file: (PDF, Image, etc.):</label>
+            <input type="file" id="file" name="file" accept=".pdf, .jpg, .jpeg, .png" required>
+        </div>
+        <div>
+            <label for="Qualification">Qualification*:</label>
+            <input type="text" id="Qualification" name="Qualification" placeholder="Enter your qualification" required>
+           <input type="checkbox">
+           <label >*I agree with the terms and condition that whatever mentioned in the form is my real information</label>
+
+
+       <button  id="submit" value="submit">Submit</button>
+        </div>
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>
